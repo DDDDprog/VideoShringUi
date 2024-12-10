@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  m
+  margin: auto;
+  padding: auto;
+  justify-self: unset;
+  kerning: auto;
+  justify-self:auto;
+  position: relative;
+}

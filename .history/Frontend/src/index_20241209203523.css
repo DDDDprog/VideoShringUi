@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: auto;
+  padding: auto;
+  justify-self: unset;
+  kerning: auto;
+  animation-range-start: ;
+}
