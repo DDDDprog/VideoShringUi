@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -128,7 +128,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [message, setMessage] = useState({ text: "", type: "" }); 
+  const [message, setMessage] = useState({ text: "", type: "" });
   const navigate = useNavigate(); // Hook for navigation
 
   const handleSubmit = async (e) => {
@@ -137,8 +137,8 @@ const Login = () => {
 
     try {
       const url = isLogin
-        ? "http://localhost:5000/login"
-        : "http://localhost:5000/register";
+        ? "http://localhost:8000/login"
+        : "http://localhost:8000/register";
       const { data } = await axios.post(url, payload);
 
       // Display success message and navigate to home page
